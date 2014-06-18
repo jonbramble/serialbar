@@ -1,15 +1,8 @@
 module Serialbox
-    
-    # need this here otherwise it gives an error for uninit const
-    module Helpers
-    end
+	module Listener
 
-	class Listener
-		include Helpers
-		
 		def initialize(portname)
-			puts portname
-			puts time
+			puts "serial port " + portname
 		end
 
 		def setup
@@ -21,10 +14,10 @@ module Serialbox
 			# Start reading from serial port
 		end
 
-
 		def method_missing(id, *args)
 			 raise NoMethodError, "Parse method not implemented" if id.to_s.eql?("parse")    		    
  		end
-	end
+
+end
 
 end
