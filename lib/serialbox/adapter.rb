@@ -19,7 +19,7 @@ module Serialbox
 			# load module based on type
 			case type
 				when :mongoid
-          require 'mongoid'
+          require 'serialbox/adapters/mongoid'
           mod = Mongoid::Document
 			end
   			base.send :include, mod	
