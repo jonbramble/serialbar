@@ -1,8 +1,10 @@
-require 'serialbox/data_point'
+$LOAD_PATH << File.expand_path( File.dirname(__FILE__) +"/../" )
+
+require 'serialbox/adapter'
 require 'serialbox/listener'
 require 'serialbox/helpers'
 
-# generic adapter didn't work
+require 'mongoid'
 
 Mongoid.load!("mongoid.yml", :production) # will need to be able to configure this from the main file
 
