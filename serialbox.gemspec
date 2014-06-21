@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = Serialbox::VERSION
   spec.date          = '2014-06-20'
   spec.summary       = "An adapter gem between incomming serial port data and storage"
-  spec.description   = "Parse and save incoming data to mongoid"
+  spec.description   = "Parse and save incoming data to storage, default mongodb"
   spec.authors       = ["Jonathan Bramble"]
   spec.email         = ["jbramble82@hotmail.com"]
-  spec.homepage    = 'https://github.com/jonbramble/serialbox/'
+  spec.homepage      = 'https://github.com/jonbramble/serialbox/'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -19,9 +19,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec', '~> 3.0.0'
-  spec.add_development_dependency "mongoid"
+  spec.add_development_dependency 'rake', '~> 0'
+  spec.add_development_dependency 'rspec', '~> 3.0', '>= 3.0.0'
+  spec.add_development_dependency "mongoid", "~> 3.1", '>= 3.1.6'
 
-  spec.add_runtime_dependency "serialport"
+  spec.add_runtime_dependency "serialport", '~> 1.3', '>= 1.3.0'
 end
