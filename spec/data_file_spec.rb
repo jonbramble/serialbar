@@ -1,10 +1,9 @@
-require 'serialbox'
+require 'spec_helper'
 
 RSpec.describe "Datafile" do 
 
 	context "without include adapter" do 
 		class DataFile
-			#include Serialbox::Adapter
 		end
 
 		it "does not respond to configure adapter" do
