@@ -7,7 +7,6 @@ module Serialbox
   	module ClassMethods
 
   		def foo
-      		puts 'class method'
     	end
 
     	def configure_adapter(type,classname="DataFile")

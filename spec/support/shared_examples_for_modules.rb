@@ -21,17 +21,17 @@ end
 RSpec.shared_examples_for Serialbox::Listener do
 		context 'with an instance' do
 			before(:each) do
-				@obj = described_class.new("portname")
+				@obj = described_class.new
 			end
 			
 			# test instance methods here
 			it 'should be an instance of listener' do
-				expect(@obj).to be_instance_of(described_class)
+				expect ( @obj ).to be_instance_of(described_class)
 			end
 
 			it 'should response to test listener method' do
-      			expect(@obj.listener?).to be true
-    		end
+      			expect(@obj.listener?).to eq(true)
+      		end
 
 		end
 

@@ -1,17 +1,19 @@
+require 'serialport'
+
 module Serialbox
 	module Listener
 
-		def initialize(portname)
-			puts "serial port " + portname
+		def parse_missing?
+			parse("test string")
 		end
 
 		def listener?
-			true  #testing method
+			return true  #testing method
 		end
 
-		def setup
-			#create serial port
-			puts parse
+		def setup(port)
+			@portname = port || "/dev/tty0"
+			@sp = SerialPort.new(@portname,9600,8,1)
 		end
 
 		def run
