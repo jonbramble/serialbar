@@ -21,22 +21,22 @@ end
 class Listener
  include Serialbox::Listener
  
- def parse 						#parse the input	
-    p = PhPoint.new({ph: "5", time: Time.now, experiment: "TEST0001"})
-    p.save
- end
+ #def parse 						#parse the input	
+ #   p = PhPoint.new({ph: "5", time: Time.now, experiment: "TEST0001"})
+ #   p.save
+ #end
 
  #how does it poll the port, or wait for input? 
 
 end
 
-#l = Listener.new("creature")
-#l.setup
+l = Listener.new("creature")
+l.setup
 #l.run
 
-p = PhPoint.new({ph: "5", time: Time.now, experiment: "TEST0001"})
-p.save
-points =  PhPoint.where(experiment: "TEST0001")
-points.each do |point|
-	puts point.time
-end
+#p = PhPoint.new({ph: "5", time: Time.now, experiment: "TEST0001"})
+#p.save
+#points =  PhPoint.where(experiment: "TEST0001")
+#points.each do |point|
+#	puts point.time
+#end

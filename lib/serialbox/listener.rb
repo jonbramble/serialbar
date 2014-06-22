@@ -19,7 +19,7 @@ module Serialbox
 		end
 
 		def method_missing(id, *args)
-			 raise NoMethodError, "Parse method not implemented" if id.to_s.eql?("parse")    		    
+			 raise Serialbox::NoParseMethodError, "Parse method not implemented" if id.to_s.eql?("parse")    		    
  		end
 
 end
