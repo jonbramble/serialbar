@@ -1,7 +1,6 @@
 module Serialbox
  module Adapter
   module InstanceMethods
-
   end
 
   	module ClassMethods

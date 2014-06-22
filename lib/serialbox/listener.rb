@@ -11,13 +11,13 @@ module Serialbox
 			return true  #testing method
 		end
 
-		def setup(port)
+		def setup(port, baud=9600, data_bits=8, stop_bits=1)
 			@portname = port || "/dev/tty0"
-			@sp = SerialPort.new(@portname,9600,8,1)
+			@sp = SerialPort.new(@portname,baud,data_bits,stop_bits)
 		end
 
 		def run
-			# Start reading from serial port
+			puts "Listening on serial port #{@portname}"
 		end
 
 		def method_missing(id, *args)
