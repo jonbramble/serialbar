@@ -1,32 +1,28 @@
 require 'spec_helper'
 
-RSpec.describe "Datafile" do 
-
-	context "without include adapter" do 
-		class DataFile
+RSpec.shared_examples_for Serialbox::Adapter do
+		context 'with an instance' do
+			#before(:each) do
+			#	@obj = described_class.new
+			#end
 		end
 
-		it "does not respond to configure adapter" do
-	 		expect(DataFile).not_to respond_to :configure_adapter
-		end
+		context 'class methods' do
+			it 'should be an adapted class' do
+				expect(described_class).to respond_to :foo
+			end
 
-		it "does not respond to foo" do
-	 		expect(DataFile).not_to respond_to :foo
+			it "responds to configure adapter" do
+ 	 			expect(described_class).to respond_to :configure_adapter
+ 			end
 		end
-	end
+end
 
-	context "with include adapter" do 
-		class DataFile
-			include Serialbox::Adapter
-		end
 
-		it "responds to configure adapter" do
-	 		expect(DataFile).to respond_to :configure_adapter
-		end
+class DataFile
+	include Serialbox::Adapter
+end
 
-		it "responds to foo" do
-	 		expect(DataFile).to respond_to :foo
-		end
-	end
-
+RSpec.describe DataFile do
+	it_behaves_like Serialbox::Adapter
 end
