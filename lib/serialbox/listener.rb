@@ -5,6 +5,10 @@ module Serialbox
 			puts "serial port " + portname
 		end
 
+		def listener?
+			true  #testing method
+		end
+
 		def setup
 			#create serial port
 			puts parse

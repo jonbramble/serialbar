@@ -1,6 +1,8 @@
 require 'bundler/setup'
 require 'serialbox'
 
+Dir["./spec/support/**/*.rb"].each {|f| require f}
+
 RSpec.configure do |config|
   # Setting this config option `false` removes rspec-core's monkey patching of the
   # top level methods like `describe`, `shared_examples_for` and `shared_context`
