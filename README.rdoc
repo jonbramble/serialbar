@@ -4,6 +4,8 @@
 
 == DESCRIPTION: 
 
+# Work in progress, not ready for use
+
 Serialbox acts as an intermediary between serial port data and database based storage
 
 This was part of a project to save data from scientific instruments in a mongodb database but was made to be extendable
@@ -11,7 +13,8 @@ This was part of a project to save data from scientific instruments in a mongodb
 == FEATURES:
 
 Generators are available to create a bearbones program
-You still need to know the response and how to parse the serialport data and pass that to data objects
+
+You still need to know the instrument response and how to parse the serialport data and pass that to data objects
 
 == TODO:
 
