@@ -1,0 +1,39 @@
+= \Serialbox
+
+* http://github.com/jonbramble/serialbox
+
+== DESCRIPTION: 
+
+Serialbox acts as an intermediary between serial port data and database based storage
+
+This was part of a project to save data from scientific instruments in a mongodb database but was made to be extendable
+
+== FEATURES:
+
+Generators are available to create a bearbones program
+You still need to know the response and how to parse the serialport data and pass that to data objects
+
+== TODO:
+
+A server component will be added in the future for quick data visualisation
+More adapters need to be written and will be based on Active Model 
+Configuration file for projects
+
+== SYNOPSIS
+
+	#todo
+
+== INSTALL
+
+* gem install serialbox  (not available just yet)
+
+
+== LICENSE:
+
+Copyright (C) 2014 Jonathan Bramble
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

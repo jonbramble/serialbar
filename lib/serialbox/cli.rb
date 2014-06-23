@@ -21,22 +21,20 @@ module Serialbox
   		option :adapter, aliases: "-d", desc: "set the adapter type", required: true	
 		desc "new NAME", "create a new serialbox project"
   		def new(name)
-    		say "creating a new serialbox project #{name}", :green 
-    		readme(name) # create readme file in project dir
+    			say "creating a new serialbox project #{name}", :green 
+    			readme(name) # create readme file in project dir
 
-    		case options[:adapter]
-    			when "mongoid"
-    				say 'Using mongoid adapter', :green
-    				insert_mongoid(name)
-    				insert_data_file(name,"mongoid")
+    			case options[:adapter]
+    				when "mongoid"
+    					say 'Using mongoid adapter', :green
+    					insert_mongoid(name)
+    					insert_data_file(name,"mongoid")
+    				else 
+    					say 'Adapter type unknown', :red
+    					#invoke(:list_adapters,"")
+    			end
 
-    			else 
-    				say 'Adapter type unknown', :red
-    				#invoke(:list_adapters,"")
-    		end
-
-    		insert_listener(name)
-
+    			insert_listener(name)
   		end
 
   		desc "help", "serialbox help"
