@@ -1,4 +1,5 @@
 *~
 mongoid.yml
 spec/mongoid.yml
+dummy
 *.gem
