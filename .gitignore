@@ -1,4 +1,6 @@
 *~
+serialbox.sublime-project
+serialbox.sublime-workspace
 mongoid.yml
 spec/mongoid.yml
 doc
