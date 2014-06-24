@@ -6,3 +6,4 @@ spec/mongoid.yml
 doc
 dummy
 *.gem
+.yardoc
