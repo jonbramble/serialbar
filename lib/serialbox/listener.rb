@@ -1,4 +1,5 @@
 require 'serialport'
+require 'timers'
 
 module Serialbox
 	module Listener
@@ -16,19 +17,83 @@ module Serialbox
 		end
 
 		# Trigger listening on setup serial port
+		# 
+		# simply reads each line from the port and passes it as string to implemented parse method
 		def run
 			#is the serial port setup?
 			puts "Listening on serial port #{@portname}"
-			@sp.flush_input
+			if port_initialized?
+				@sp.flush_input
     			begin 
  				while data = @sp.readline
- 					parse_(data)
+ 					parse(data)
  				end
  	  			rescue Interrupt
-  					puts "exiting"	
+  					puts "Exiting"	
   				end
+  			end
 		end
 
+		# Poll device by sending string 
+		#
+		# ==== Attributes
+		#
+		# * +send+ - string to send to the serial port
+		# * +lines+ - number of lines to read back
+		#
+		# ==== Examples
+		# 
+		# 		data = listener.poll("#001\\n")
+		# 
+		# read lines not implemented yet
+		def poll(send,lines=1)
+			if port_initialized?
+				begin
+					@sp.write(send)
+					data = @sp.readline
+				rescue Interrupt
+  					puts "Exiting"	
+  				end
+  				parse(data)
+  			end
+		end
+
+		# Poll device with a timer
+		# could use clever missing_method stuff here
+		#
+		# data is passed as an argument to parse
+		#
+		# ==== Attributes
+		#
+		# * +send+ - string to send to the serial port
+		# * +lines+ - number of lines to read back
+		# * +n+ - number of seconds between each poll of the device
+		#
+		def poll_every_n_seconds(send,lines=1,n=1)
+			timer = Timer.new
+			every_seconds = timers.every(n) { parse(poll(send,lines)) }
+			loop { timers.wait } 
+		end
+	
+		# Poll device with a timer
+		# could use clever missing_method stuff here
+		# 
+		# data is passed as an argument to parse
+		#
+		# ==== Attributes
+		#
+		# * +send+ - string to send to the serial port
+		# * +lines+ - number of lines to read back
+		# * +n+ - number of minutes between each poll of the device
+		#
+		def poll_every_n_minutes(send,lines=1,n=1)
+			timer = Timer.new
+			every_seconds = timers.every(60*n) { parse(poll(send,lines)) }
+			loop { timers.wait } 
+		end
+
+		# Using method missing to check for the inclusion of the subclass implementation of parse
+		# 
 		def method_missing(id, *args) #:nodoc:
 			if id.to_s.eql?("parse")    		
 				raise Serialbox::NoParseMethodError, "Parse method not implemented"     

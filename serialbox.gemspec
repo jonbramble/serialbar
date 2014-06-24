@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "serialport", '~> 1.3', '>= 1.3.0'
   spec.add_runtime_dependency "thor", '~> 0.19', '>= 0.19.1'
+  spec.add_runtime_dependency "timers", '~> 3.0.0'
 end
