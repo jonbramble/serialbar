@@ -26,12 +26,12 @@ RSpec.shared_examples_for Serialbox::Listener do
 			
 			# test instance methods here
 			it 'should be an instance of listener' do
-				expect ( @obj ).to be_instance_of(described_class)
+				expect(@obj).to be_instance_of(described_class)
 			end
 
 			it 'should response to test listener method' do
-      			expect(@obj.listener?).to eq(true)
-      		end
+      				expect(@obj.listener?).to eq(true)
+      			end
 
 		end
 

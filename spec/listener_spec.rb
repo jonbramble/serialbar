@@ -31,6 +31,17 @@ RSpec.describe Listener do
 	end
 
     it 'should not raise error if parse is present' do
-    	expect { @obj.parse_missing? }.not_to raise_error
+    	expect{@obj.parse_missing?}.not_to raise_error
     end
+
+	it 'should raise a PortNotInitialized exception if setup has not been called' do
+		expect{@obj.port_initialized?}.to raise_error(Serialbox::PortNotInitialized, "Call setup on listener class to initialize serial port")
+	end
+
+	it 'should return a serialport object' do
+		pending("No serialports on this computer")
+		this_should_not_get_executed
+		@obj.setup("/dev/ttyS0")  # don't have serialports on this test computer
+		expect (@obj.serial_port).to be_instance_of SerialPort
+	end
 end
