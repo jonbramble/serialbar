@@ -69,7 +69,7 @@ class SerialListen
  		while data = @sp.readline
  			parse_input(data)
  		end
- 	rescue Interrupt
+ 	  rescue Interrupt
   		puts "exiting"	
   	end
 
