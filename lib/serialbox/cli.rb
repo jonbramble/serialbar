@@ -58,7 +58,7 @@ Description:  A simple app to create a database or file based storage adapter fo
   			end
 
   			def insert_mongoid(name)
-  				copy_file "generators/mongoid.yml", "#{name}/mongoid_example.yml"
+  				copy_file "generators/mongoid_example.yml", "#{name}/mongoid_example.yml"
   				#append specific instructions to readme
   			end
 
