@@ -1,4 +1,4 @@
-module Serialbox
+module Serialbar
  module Adapter
   module InstanceMethods
   end
@@ -17,10 +17,10 @@ module Serialbox
 			# load module based on type
 			case type
 				when :mongoid
-          require 'serialbox/adapters/mongoid'
+          require 'serialbar/adapters/mongoid'
           mod = Mongoid::Document
         when :filesystem	
-          require 'serialbox/adapters/file_system'	
+          require 'serialbar/adapters/file_system'	
 			end
   			base.send :include, mod	
   		end

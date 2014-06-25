@@ -1,7 +1,7 @@
 require 'serialport'
 require 'timers'
 
-module Serialbox
+module Serialbar
 	module Listener
 
 		# Setup the serial port
@@ -96,7 +96,7 @@ module Serialbox
 		# 
 		def method_missing(id, *args) #:nodoc:
 			if id.to_s.eql?("parse")    		
-				raise Serialbox::Exceptions::NoParseMethodError, "Parse method not implemented"     
+				raise Serialbar::Exceptions::NoParseMethodError, "Parse method not implemented"     
 			else
 				raise NoMethodError
 			end
@@ -112,7 +112,7 @@ module Serialbox
 
 		def port_initialized?
 			if @sp.nil?
-				raise Serialbox::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port"     
+				raise Serialbar::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port"     
 			else
 				return true
 			end

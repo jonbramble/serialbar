@@ -1,4 +1,4 @@
-RSpec.shared_examples_for Serialbox::Adapter do
+RSpec.shared_examples_for Serialbar::Adapter do
 		context 'with an instance' do
 			#before(:each) do
 			#	@obj = described_class.new
@@ -18,7 +18,7 @@ RSpec.shared_examples_for Serialbox::Adapter do
 end
 
 
-RSpec.shared_examples_for Serialbox::Listener do
+RSpec.shared_examples_for Serialbar::Listener do
 		context 'with an instance' do
 			before(:each) do
 				@obj = described_class.new

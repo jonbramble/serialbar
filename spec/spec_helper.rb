@@ -1,5 +1,5 @@
 require 'bundler/setup'
-require 'serialbox'
+require 'serialbar'
 
 Dir["./spec/support/**/*.rb"].each {|f| require f}
 

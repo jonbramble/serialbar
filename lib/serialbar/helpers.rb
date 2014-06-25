@@ -1,4 +1,4 @@
-module Serialbox
+module Serialbar
 	module Helpers
 		def time
 			return Time.now

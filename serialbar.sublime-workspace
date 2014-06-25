@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"insert_",
+				"insert_listener"
+			],
+			[
+				"list",
+				"list_adapters"
+			],
+			[
+				"des",
+				"destination_root"
+			],
+			[
+				"pu",
+				"public_methods"
+			],
+			[
+				"A",
+				"Adapter"
+			],
+			[
+				"ce",
+				"centre_polygon"
+			],
+			[
+				"Po",
+				"Polygon_2"
+			],
+			[
+				"prin",
+				"print_polygon"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"relati",
+				"relative_assets"
+			],
+			[
+				"P",
+				"PHPoint"
+			],
+			[
+				"da",
+				"data_point"
+			],
+			[
+				"new",
+				"new_code"
+			],
+			[
+				"pa",
+				"params"
+			],
+			[
+				"lca",
+				"location"
+			],
+			[
+				"item",
+				"item"
+			],
+			[
+				"ass",
+				"assigns"
+			],
+			[
+				"it",
+				"itb	RSpec It Block"
+			],
+			[
+				"def",
+				"def	Ruby/Rails Method"
+			],
+			[
+				"fin",
+				"find"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/serialbox/listener.rb",
+			"settings":
+			{
+				"buffer_size": 2921,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jon/Documents/Latex/rsc-ph-paper/paper.tex",
+			"settings":
+			{
+				"buffer_size": 13798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/serialbox/exceptions.rb",
+			"settings":
+			{
+				"buffer_size": 188,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "seriallisten.rb",
+			"settings":
+			{
+				"buffer_size": 1742,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/LaTeXTools/LaTeX.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Snippet: ",
+				"Snippet: def self .. end"
+			],
+			[
+				"packag",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"fdsf",
+			"view.run_command(\"insert\", {\"miaow\"})",
+			"view.run_command(\"insert\", \"miaow\")",
+			"view.run_command(insert, \"miaow\")",
+			"copy",
+			"view.run_command(\"example\")",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"sublime.packages_path()"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jon/Programming/Ruby/serialbox/README.rdoc",
+		"/home/jon/Programming/Ruby/serialbox/bin/serialbox",
+		"/home/jon/Programming/Ruby/serialbox/spec/listener_spec.rb",
+		"/home/jon/Programming/Ruby/serialbox/spec/test.rb",
+		"/home/jon/Programming/Ruby/serialbox/Rakefile",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/generators/README",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/cli.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/generators/boiler_plate.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/generators/mongoid.yml",
+		"/home/jon/Programming/Ruby/seriallisten/lib/serialbox.rb",
+		"/home/jon/Programming/Ruby/serialbox/seriallisten.rb",
+		"/home/jon/Programming/Ruby/serialbox/test/test.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/generators/test.rb",
+		"/home/jon/Programming/Ruby/serialbox/serialbox.gemspec",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-06-26-lunchtime-seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-07-17-launch-event.markdown",
+		"/home/jon/Programming/jekyll/crs/.gitignore",
+		"/home/jon/Programming/jekyll/crs/_config.yml",
+		"/home/jon/Programming/Ruby/inctest/adapters/document.rb",
+		"/home/jon/Programming/Ruby/inctest/adapters/sheet.rb",
+		"/home/jon/Programming/Ruby/seriallisten/lib/serialbox/listener.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/scratch.rb",
+		"/home/jon/Programming/Ruby/seriallisten/spec/test.rb",
+		"/home/jon/Programming/Ruby/inctest/inctest.rb",
+		"/home/jon/Programming/Ruby/inctest/adapter.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/adapter.rb",
+		"/home/jon/Programming/Ruby/inctest/sheet.rb",
+		"/home/jon/Programming/Ruby/inctest/document.rb",
+		"/home/jon/Programming/Ruby/inctest/inctest_comp.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/listener.rb",
+		"/home/jon/Programming/Ruby/serialbox/lib/serialbox/data_point.rb",
+		"/home/jon/Programming/Ruby/sinatra/phview/mongoid.yml",
+		"/home/jon/Programming/Ruby/inctest/inctest_basic.rb",
+		"/home/jon/Programming/Ruby/seriallisten/lib/serialbox/data_point.rb",
+		"/home/jon/Programming/Ruby/seriallisten/lib/serialbox/adapters/mongoid.rb",
+		"/home/jon/Programming/Ruby/seriallisten/lib/serialbox/scratch.rb",
+		"/data/phyjpb/Data/SQUID/4Loops S7,1T.dc.raw",
+		"/home/jon/Programming/CGAL/shapes/example.cpp",
+		"/home/jon/Programming/CGAL/shapes/shape5.txt",
+		"/home/jon/Programming/jekyll/crs/new_post_docs/index.html",
+		"/home/jon/Programming/mruby/example.c",
+		"/home/jon/Programming/CGAL/shapes/example",
+		"/home/jon/Programming/CGAL/shapes/CMakeLists.txt",
+		"/home/jon/Programming/jekyll/crs/_sass/_settings.scss",
+		"/home/jon/Programming/jekyll/crs/_includes/scripts.html",
+		"/home/jon/Programming/jekyll/crs/_includes/header.html",
+		"/home/jon/Programming/jekyll/crs/_includes/head.html",
+		"/home/jon/Programming/jekyll/crs/_includes/footer.html",
+		"/home/jon/Programming/jekyll/crs/_layouts/page.html",
+		"/home/jon/Programming/jekyll/crs/_layouts/default.html",
+		"/home/jon/Programming/jekyll/crs/_plugins/bitly_filter.rb",
+		"/home/jon/Programming/jekyll/crs/_sass/app.scss",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-06-25-lunchtime-seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/_layouts/post.html",
+		"/home/jon/Programming/jekyll/crs/events/index.html",
+		"/home/jon/Programming/jekyll/crs/css/app.css",
+		"/home/jon/Programming/Ruby/bty/bitlyapi.rb",
+		"/home/jon/Programming/jekyll/crs/_data/committee.yml",
+		"/home/jon/Programming/jekyll/katkitten/_layouts/default.html",
+		"/home/jon/Programming/jekyll/crs/_includes/bckfooter.html",
+		"/home/jon/Programming/jekyll/crs/_site/css/foundation-icons.css",
+		"/home/jon/Programming/jekyll/katkitten/_sass/app.scss",
+		"/home/jon/Programming/jekyll/katkitten/_sass/_palette.scss",
+		"/home/jon/Programming/jekyll/katkitten/_sass/_settings.scss",
+		"/home/jon/Programming/jekyll/katkitten/_includes/head.html",
+		"/home/jon/Programming/jekyll/katkitten/_includes/footer.html",
+		"/home/jon/Programming/jekyll/katkitten/css/foundation-icons.css",
+		"/home/jon/Programming/jekyll/crs/css/screen.css",
+		"/home/jon/Programming/jekyll/crs/css/ie.css",
+		"/home/jon/Programming/jekyll/katkitten/css/app.css",
+		"/home/jon/Programming/jekyll/katkitten/_config.yml",
+		"/home/jon/Programming/jekyll/katkitten/_sass/config.rb",
+		"/home/jon/Programming/jekyll/katkitten/fkk/config.rb",
+		"/home/jon/Programming/jekyll/crs/home/index.html",
+		"/home/jon/Programming/jekyll/crs/committee/index.html",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-03-07-seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/previous_events/index.html",
+		"/home/jon/Programming/jekyll/crs/_includes/nav.html",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-02-13-coffee-morning.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-11-23-postdoc-awayday.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-05-22-coffee-morning.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-11-23-coffee-morning.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-12-09-lunchtime-seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-09-23-coffee_morning.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-06-25-lunchtime_seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2013-09-13-coffee_morning.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-06-25-Lunchtime Seminar.markdown",
+		"/home/jon/Programming/jekyll/crs/_posts/2014-06-25-Launch Event.markdown",
+		"/home/jon/Programming/Web/crs/scss/app.scss",
+		"/home/jon/Programming/Web/crs/committee.html",
+		"/home/jon/Programming/jekyll/kelima/_includes/main_navigation.html",
+		"/home/jon/Programming/jekyll/crs/_layouts/old_default.html",
+		"/home/jon/Programming/jekyll/crs/Gemfile",
+		"/home/jon/Programming/jekyll/crs/_sass/config.rb",
+		"/home/jon/Programming/jekyll/crs/_compass/js/app.js",
+		"/home/jon/Programming/Web/crs/links.html",
+		"/home/jon/Programming/Web/crs/new_post_docs.html",
+		"/home/jon/Programming/Web/crs/scss/_settings.scss",
+		"/home/jon/Programming/Web/crs/index.html",
+		"/home/jon/Programming/Web/crs/events.html",
+		"/home/jon/Programming/Web/crs/previous_events.html",
+		"/home/jon/Programming/jekyll/crs/crs/config.rb",
+		"/home/jon/Programming/jekyll/crs/_plugins/generator_scss.rb",
+		"/home/jon/Programming/jekyll/kelima/_config.yml",
+		"/home/jon/Programming/jekyll/crs/css/main.css",
+		"/home/jon/Programming/jekyll/kelima/_sass/config.rb",
+		"/home/jon/Programming/Web/crs/Gruntfile.js",
+		"/home/jon/Programming/Web/crs/index3.html",
+		"/home/jon/Programming/Web/crs/ft/crs/index.html",
+		"/home/jon/Programming/Web/crs/ft/crs/scss/_settings.scss",
+		"/home/jon/Documents/Latex/Magnetite-MacroFluidic/main.tex",
+		"/home/jon/Programming/Web/crs/ft/crs/README.md",
+		"/home/jon/Programming/Web/crs/ft/crs/css/app.css",
+		"/home/jon/Programming/Web/crs/events",
+		"/home/jon/Linux/wandboard/bin/repo",
+		"/home/jon/Programming/julia/fbfoptics/main.jl",
+		"/home/jon/Programming/julia/fbfoptics/layer.jl",
+		"/home/jon/Documents/Latex/rsc-ph-paper/paper.tex",
+		"/home/jon/.config/sublime-text-3/Packages/LaTeXTools/README.markdown",
+		"/home/jon/Programming/Ruby/rails/inventory/app/helpers/foundicons_helper.rb",
+		"/home/jon/Programming/Ruby/rails/inventory/app/views/substances/show.html.haml",
+		"/home/jon/Programming/Ruby/rails/inventory/app/views/locations/index.html.haml",
+		"/home/jon/Programming/Ruby/sinatra/mhtview/views/layout.haml",
+		"/home/jon/Programming/Ruby/rails/inventory/app/views/items/index.html.haml",
+		"/home/jon/Programming/Ruby/sinatra/mhtview/views/index.haml",
+		"/data/phyjpb/Data/QCMD/10.03.14/data/11-03-14-MIPS.txt",
+		"/home/jon/Programming/Ruby/sinatra/mhtview/mongoid.yml",
+		"/home/jon/Programming/Ruby/sinatra/mhtview/mongoid_example.yml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tirtiary",
+			"tier",
+			"secondary",
+			"primary",
+			"fonts",
+			"index",
+			"html",
+			"substances",
+			"substance",
+			"error",
+			"input",
+			"valid_session",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"notes",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"Item",
+			"item",
+			"items",
+			"name",
+			"document",
+			"Document",
+			"document",
+			"Document",
+			"coshhform",
+			"user",
+			"coshhform",
+			"user",
+			"User",
+			"user",
+			"items",
+			"Location",
+			"location",
+			"create_parameters",
+			"location",
+			"Location",
+			"location",
+			"6",
+			"8",
+			"item",
+			"form",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"users",
+			"%p",
+			"h5",
+			"h4",
+			"h5",
+			"h4",
+			"divider"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"items",
+			"item",
+			"location",
+			"item"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/serialbox/listener.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/jon/Documents/Latex/rsc-ph-paper/paper.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9152,
+								9152
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2736.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/serialbox/exceptions.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "seriallisten.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1340,
+								1340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 886.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 52.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "serialbox.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/NVIDIA_CUDA-5.5_Samples/NVIDIA_CUDA-5.5_Samples/0_Simple/cppIntegration/main.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 155.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

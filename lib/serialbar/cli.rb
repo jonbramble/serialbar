@@ -1,7 +1,7 @@
 require 'thor'
-require 'serialbox/generators/boiler_plate'
+require 'serialbar/generators/boiler_plate'
 
-module Serialbox
+module Serialbar
 
 	class CLI < Thor
 		include Thor::Actions
@@ -19,9 +19,9 @@ module Serialbox
   		end
 
   		option :adapter, aliases: "-d", desc: "set the adapter type", required: true	
-		desc "new NAME", "create a new serialbox project"
+		desc "new NAME", "create a new serialbar project"
   		def new(name)
-    			say "creating a new serialbox project #{name}", :green 
+    			say "creating a new serialbar project #{name}", :green 
     			readme(name) # create readme file in project dir
 
     			case options[:adapter]
@@ -37,7 +37,7 @@ module Serialbox
     			insert_listener(name)
   		end
 
-  		desc "help", "serialbox help"
+  		desc "help", "serialbar help"
   		def usage
   			puts <<-DES
 Usage: Serialbox help [command]
@@ -64,17 +64,17 @@ Description:  A simple app to create a database or file based storage adapter fo
 
   			def insert_data_file(name,adapter)
   				create_file "#{name}/data_file.rb" do
-  					Serialbox::BoilerPlate.data_file_class
+  					Serialbar::BoilerPlate.data_file_class
 				end
 
-				str = Serialbox::BoilerPlate.config_adapter_string(adapter)
+				str = Serialbar::BoilerPlate.config_adapter_string(adapter)
 				insert_into_file "#{name}/data_file.rb", str , :after => "include Serialbox::Adapters\n"
 
   			end
 
   			def insert_listener(name)
   				create_file "#{name}/listener.rb" do
-  					Serialbox::BoilerPlate.listener_class
+  					Serialbar::BoilerPlate.listener_class
 				end
   			end
 

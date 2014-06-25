@@ -1,4 +1,4 @@
-module Serialbox
+module Serialbar
 	module Exceptions
 		class NoParseMethodError < NoMethodError; end
 		class PortNotInitialized < StandardError; end

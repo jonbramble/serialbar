@@ -2,29 +2,29 @@ require 'spec_helper'
 
 #dummy class
 class Ascoltatore
-	include Serialbox::Listener
+	include Serialbar::Listener
 end
 
 class Listener
-	include Serialbox::Listener
+	include Serialbar::Listener
 	def parse(string)
 	end
 end
 
 RSpec.describe Ascoltatore do
-	it_behaves_like Serialbox::Listener
+	it_behaves_like Serialbar::Listener
 
 	before(:each) do
 		@obj = described_class.new
 	end
 
     it 'should raise error if parse is missing' do
-    	expect { @obj.parse_missing? }.to raise_error(Serialbox::Exceptions::NoParseMethodError, "Parse method not implemented")
+    	expect { @obj.parse_missing? }.to raise_error(Serialbar::Exceptions::NoParseMethodError, "Parse method not implemented")
     end
 end
 
 RSpec.describe Listener do
-	it_behaves_like Serialbox::Listener
+	it_behaves_like Serialbar::Listener
 
 	before(:each) do
 		@obj = described_class.new
@@ -35,7 +35,7 @@ RSpec.describe Listener do
     end
 
 	it 'should raise a PortNotInitialized exception if setup has not been called' do
-		expect{@obj.port_initialized?}.to raise_error(Serialbox::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port")
+		expect{@obj.port_initialized?}.to raise_error(Serialbar::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port")
 	end
 
 	it 'should return a serialport object' do

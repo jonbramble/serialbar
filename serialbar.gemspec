@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'serialbox/version'
+require 'serialbar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "serialbox"
-  spec.version       = Serialbox::VERSION
+  spec.name          = "serialbar"
+  spec.version       = Serialbar::VERSION
   spec.date          = '2014-06-20'
   spec.summary       = "An adapter gem between incomming serial port data and storage"
   spec.description   = "Parse and save incoming data to storage, default mongodb"
   spec.authors       = ["Jonathan Bramble"]
   spec.email         = ["jbramble82@hotmail.com"]
-  spec.homepage      = 'https://github.com/jonbramble/serialbox/'
+  spec.homepage      = 'https://github.com/jonbramble/serialbar/'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "serialport", '~> 1.3', '>= 1.3.0'
   spec.add_runtime_dependency "thor", '~> 0.19', '>= 0.19.1'
-  spec.add_runtime_dependency "timers", '~> 3.0.0'
+  spec.add_runtime_dependency "timers", '~> 3.0', '>= 3.0.0'
 end
