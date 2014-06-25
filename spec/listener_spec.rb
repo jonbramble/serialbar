@@ -19,7 +19,7 @@ RSpec.describe Ascoltatore do
 	end
 
     it 'should raise error if parse is missing' do
-    	expect { @obj.parse_missing? }.to raise_error(Serialbox::NoParseMethodError, "Parse method not implemented")
+    	expect { @obj.parse_missing? }.to raise_error(Serialbox::Exceptions::NoParseMethodError, "Parse method not implemented")
     end
 end
 
@@ -35,7 +35,7 @@ RSpec.describe Listener do
     end
 
 	it 'should raise a PortNotInitialized exception if setup has not been called' do
-		expect{@obj.port_initialized?}.to raise_error(Serialbox::PortNotInitialized, "Call setup on listener class to initialize serial port")
+		expect{@obj.port_initialized?}.to raise_error(Serialbox::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port")
 	end
 
 	it 'should return a serialport object' do

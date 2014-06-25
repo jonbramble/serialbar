@@ -96,7 +96,7 @@ module Serialbox
 		# 
 		def method_missing(id, *args) #:nodoc:
 			if id.to_s.eql?("parse")    		
-				raise Serialbox::NoParseMethodError, "Parse method not implemented"     
+				raise Serialbox::Exceptions::NoParseMethodError, "Parse method not implemented"     
 			else
 				raise NoMethodError
 			end
@@ -112,7 +112,7 @@ module Serialbox
 
 		def port_initialized?
 			if @sp.nil?
-				raise Serialbox::PortNotInitialized, "Call setup on listener class to initialize serial port"     
+				raise Serialbox::Exceptions::PortNotInitialized, "Call setup on listener class to initialize serial port"     
 			else
 				return true
 			end
