@@ -1,4 +1,4 @@
-= \Serialbox
+= \Serialbar
 
 * http://github.com/jonbramble/serialbar
 
@@ -28,7 +28,7 @@ Configuration file for projects
 
 == INSTALL
 
-* gem install serialbar  (not available just yet)
+* gem install serialbar  (available but not working well due to timers)
 
 
 == LICENSE:
