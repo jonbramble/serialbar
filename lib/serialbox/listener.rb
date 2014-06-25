@@ -5,9 +5,9 @@ module Serialbox
 	module Listener
 
 		# Setup the serial port
-		def setup(port, baud=9600, data_bits=8, stop_bits=1)
+		def setup(port, baud=9600, data_bits=8, stop_bits=1, parity=1)
 			@portname = port
-			@sp = SerialPort.new(@portname,baud,data_bits,stop_bits)
+			@sp = SerialPort.new(@portname,baud,data_bits,stop_bits,parity)
 			@setup = true
 		end
 
