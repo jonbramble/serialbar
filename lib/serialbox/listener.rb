@@ -71,7 +71,7 @@ module Serialbox
 		#
 		def poll_every_n_seconds(send,lines=1,n=1)
 			timer = Timer.new
-			every_seconds = timers.every(n) { parse(poll(send,lines)) }
+			every_seconds = timer.every(n) { parse(poll(send,lines)) }
 			loop { timers.wait } 
 		end
 	
@@ -88,7 +88,7 @@ module Serialbox
 		#
 		def poll_every_n_minutes(send,lines=1,n=1)
 			timer = Timer.new
-			every_seconds = timers.every(60*n) { parse(poll(send,lines)) }
+			every_seconds = timer.every(60*n) { parse(poll(send,lines)) }
 			loop { timers.wait } 
 		end
 
