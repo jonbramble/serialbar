@@ -10,17 +10,18 @@ module Serialbar
 
     	def configure_adapter(type,classname="DataFile")
     		base = const_get classname
-			  load_adapter(base,type)
-		end
+		load_adapter(base,type)
+	end
 
-		def load_adapter(base,type)
-			# load module based on type
-			case type
-				when :mongoid
-          require 'serialbar/adapters/mongoid'
-          mod = Mongoid::Document
-        when :filesystem	
-          require 'serialbar/adapters/file_system'	
+	def load_adapter(base,type)
+		# load module based on type
+		case type
+			when :mongoid
+          		require 'serialbar/adapters/mongoid'
+          			mod = Mongoid::Document
+        		when :data_mapper	
+         		 require 'serialbar/adapters/datamapper'
+				mod = DataMapper::Resource	
 			end
   			base.send :include, mod	
   		end
