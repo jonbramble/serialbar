@@ -29,9 +29,11 @@ module Serialbar
     					say 'Using mongoid adapter', :green
     					insert_mongoid(name)
     					insert_data_file(name,"mongoid")
+    				when "datamapper"
+    					say 'Using datamapper adapter', :green
     				else 
     					say 'Adapter type unknown', :red
-    					#invoke(:list_adapters,"")
+    					invoke :list_adapters
     			end
 
     			insert_listener(name)
