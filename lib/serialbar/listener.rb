@@ -1,5 +1,4 @@
 require 'serialport'
-require 'set'
 require 'timers'
 
 module Serialbar
