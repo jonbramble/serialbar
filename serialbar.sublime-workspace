@@ -191,6 +191,7 @@
 	},
 	"file_history":
 	[
+		"/home/jon/Programming/Ruby/serialbar/lib/serialbar.rb",
 		"/home/jon/Programming/Ruby/serialbar/seriallisten.rb",
 		"/home/jon/Documents/Latex/rsc-ph-paper/paper.tex",
 		"/home/jon/Programming/Ruby/serialbox/README.rdoc",
@@ -317,8 +318,7 @@
 		"/home/jon/Programming/Ruby/sinatra/mhtview/views/layout.haml",
 		"/home/jon/Programming/Ruby/rails/inventory/app/views/items/index.html.haml",
 		"/home/jon/Programming/Ruby/sinatra/mhtview/views/index.haml",
-		"/data/phyjpb/Data/QCMD/10.03.14/data/11-03-14-MIPS.txt",
-		"/home/jon/Programming/Ruby/sinatra/mhtview/mongoid.yml"
+		"/data/phyjpb/Data/QCMD/10.03.14/data/11-03-14-MIPS.txt"
 	],
 	"find":
 	{
@@ -448,8 +448,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								87,
+								87
 							]
 						],
 						"settings":
@@ -458,7 +458,7 @@
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
