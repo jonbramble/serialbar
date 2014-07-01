@@ -30,6 +30,7 @@ module Serialbar
  				end
  	  			rescue Interrupt
   					puts "Exiting"	
+  					@sp.close
   				end
   			end
 		end
@@ -39,57 +40,58 @@ module Serialbar
 		# ==== Attributes
 		#
 		# * +send+ - string to send to the serial port
-		# * +lines+ - number of lines to read back
+		# * +block+ - execute a block if port is open - call parse on return data
 		#
 		# ==== Examples
 		# 
-		# 		data = listener.poll("#001\\n")
+		# 		data = listener.poll("#001N\n")
 		# 
 		# read lines not implemented yet
-		def poll(send,lines=1)
+		def poll(send,&block)
 			if port_initialized?
-				begin
-					@sp.write(send)
-					data = @sp.readline
-				rescue Interrupt
-  					puts "Exiting"	
+				if block_given?
+					block.call	
+				else
+					begin
+						@sp.write(send)
+						data = @sp.readline
+					rescue Interrupt
+  						puts "Exiting"	
+  						@sp.close
+  					end
+  						parse(data)
   				end
-  				parse(data)
   			end
 		end
 
 		# Poll device with a timer
-		# could use clever missing_method stuff here
 		#
 		# data is passed as an argument to parse
 		#
 		# ==== Attributes
 		#
 		# * +send+ - string to send to the serial port
-		# * +lines+ - number of lines to read back
 		# * +n+ - number of seconds between each poll of the device
 		#
-		def poll_every_n_seconds(send,lines=1,n=1)
+		def poll_every_n_seconds(send,n=1)
 			timer = Timers::Group.new
-			every_seconds = timer.every(n) { parse(poll(send,lines)) }
-			loop { timers.wait } 
+			every_seconds = timer.every(n) { parse(poll(send)) }
+			loop { timer.wait } 
 		end
 	
 		# Poll device with a timer
-		# could use clever missing_method stuff here
 		# 
 		# data is passed as an argument to parse
 		#
 		# ==== Attributes
 		#
 		# * +send+ - string to send to the serial port
-		# * +lines+ - number of lines to read back
 		# * +n+ - number of minutes between each poll of the device
 		#
-		def poll_every_n_minutes(send,lines=1,n=1)
+		def poll_every_n_minutes(send,n=1)
 			timer = Timers::Group.new
-			every_seconds = timer.every(60*n) { parse(poll(send,lines)) }
-			loop { timers.wait } 
+			every_seconds = timer.every(60*n) { parse(poll(send)) }
+			loop { timer.wait } 
 		end
 
 		# Using method missing to check for the inclusion of the subclass implementation of parse
