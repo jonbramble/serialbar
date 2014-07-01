@@ -75,7 +75,7 @@ module Serialbar
 		#
 		def poll_every_n_seconds(send,n=1)
 			timer = Timers::Group.new
-			every_seconds = timer.every(n) { parse(poll(send)) }
+			every_seconds = timer.every(n) { poll(send) }
 			loop { timer.wait } 
 		end
 	
@@ -90,7 +90,7 @@ module Serialbar
 		#
 		def poll_every_n_minutes(send,n=1)
 			timer = Timers::Group.new
-			every_seconds = timer.every(60*n) { parse(poll(send)) }
+			every_seconds = timer.every(60*n) { poll(send) }
 			loop { timer.wait } 
 		end
 
