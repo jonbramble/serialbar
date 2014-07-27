@@ -24,6 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "mongoid", "~> 3.1", '>= 3.1.6'
 
   spec.add_development_dependency "data_mapper", '~> 1.2.0'
+  spec.add_development_dependency "dm-sqlite-adapter", '~> 1.2.0'
 
   spec.add_runtime_dependency "serialport", '~> 1.3', '>= 1.3.0'
   spec.add_runtime_dependency "thor", '~> 0.19', '>= 0.19.1'
